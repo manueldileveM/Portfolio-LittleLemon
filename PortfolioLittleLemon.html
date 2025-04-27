@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Lemon - Progetto Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefae0;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #495E57;
+      text-align: center;
+    }
+    .screenshots {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+    .screenshot {
+      width: 30%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+    .stack, .description, .links, .learnings {
+      margin-bottom: 30px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "\2022 ";
+      color: #F4CE14;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+    .btn {
+      background-color: #F4CE14;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e3bd0f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Little Lemon - Sistema di Prenotazione</h1>
+
+    <div class="description">
+      <p>Ho sviluppato un'applicazione React per la prenotazione tavoli del ristorante <strong>Little Lemon</strong>. Il progetto include una homepage, un modulo di prenotazione con validazione lato client, una pagina di conferma e una struttura responsive pensata per offrire la migliore user experience su ogni dispositivo.</p>
+    </div>
+
+    <div class="screenshots">
+      <h2>Screenshot:</h2>
+      <img src="Screenshot-2.png" alt="Prenotazione" class="screenshot" />
+      <img src="Screenshot-1.png" alt="Conferma" class="screenshot" />
+      <img src="Screenshot-3.png" alt="Homepage" class="screenshot" />
+    </div>
+
+    <div class="stack">
+      <h2>Stack Tecnologico</h2>
+      <ul>
+        <li>React</li>
+        <li>HTML5 & CSS3</li>
+        <li>Jest + React Testing Library</li>
+        <li>Validazione HTML5 & JS</li>
+        <li>Accessibilità (ARIA)</li>
+        <li>Responsive design</li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <h2>Link al progetto</h2>
+      <a href="https://github.com/manueldileveM/alphaproject" target="_blank" class="btn">Vai al repository GitHub</a>
+    </div>
+
+    <div class="learnings">
+      <h2>Cosa ho imparato</h2>
+      <ul>
+        <li>Creare componenti React modulari e accessibili</li>
+        <li>Gestire la validazione dei form in HTML5 e React</li>
+        <li>Scrivere test unitari e test dei componenti</li>
+        <li>Ottimizzare per mobile e migliorare la UX</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
